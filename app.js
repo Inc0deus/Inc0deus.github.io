@@ -1,3 +1,3 @@
-function buttonAlert() {
-    alert("Hello, Wolrd!")
+function buttonTest() {
+    alert("Hello, World!")
 }

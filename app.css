@@ -1,3 +1,25 @@
-h1 {
-    color : red;
+body {
+    background-color: rgb(246, 233, 178);
 }
+
+h1 {
+    color: rgb(10, 104, 71);
+}
+
+h2 {
+    color: rgb(122, 186, 120);
+}
+
+button {
+    background-color: rgb(243, 202, 82);
+    color: rgb(10, 104, 71);
+    font-size: 16px;
+    border-radius: 4px;
+    border: 2px solid rgb(10, 104, 71);
+    transition-duration: 0.1s;
+}
+
+button:hover {
+    background-color: rgb(246, 233, 178);
+}
+
