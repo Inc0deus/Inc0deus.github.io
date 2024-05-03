@@ -3,6 +3,7 @@
 body {
     font-family: 'Fira Code', monospace;
     background-color: rgb(246, 233, 178);
+    text-align:center
 }
 
 h1 {
@@ -14,14 +15,32 @@ h2 {
     font-weight: 100;
 }
 
+p {
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+}
+
+#canvas_div {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
 button {
+    display:block;
+    margin: 0 auto;
+    width: 30%;
+
     font-family: 'Fira Code', monospace;
+    font-size: 16px;
+
     background-color: rgb(243, 202, 82);
     color: rgb(10, 104, 71);
-    font-size: 16px;
+
     border-radius: 4px;
     border: 2px solid rgb(10, 104, 71);
-    transition-duration: 0.1s;
+
+    transition-duration: 0.4s;
 }
 
 button:hover {
