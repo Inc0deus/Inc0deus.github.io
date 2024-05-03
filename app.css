@@ -1,4 +1,7 @@
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css); 
+
 body {
+    font-family: 'Fira Code', monospace;
     background-color: rgb(246, 233, 178);
 }
 
@@ -8,9 +11,11 @@ h1 {
 
 h2 {
     color: rgb(122, 186, 120);
+    font-weight: 100;
 }
 
 button {
+    font-family: 'Fira Code', monospace;
     background-color: rgb(243, 202, 82);
     color: rgb(10, 104, 71);
     font-size: 16px;
