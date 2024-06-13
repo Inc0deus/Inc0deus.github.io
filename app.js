@@ -58,7 +58,7 @@ function setup() {
     let dur = DateClass.daysBetween(date, birth)
     setVarMessage("age_message", "age", DateClass.daysToDate(dur).year)
 
-    alert("Hello")
+    alert("You've been hacked")
 }
 
 window.onload = setup
