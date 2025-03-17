@@ -1,0 +1,148 @@
+:root {
+  --background: #0e132b;
+  --lightgray: #2b333f;
+  --white: #e8e6e3;
+}
+
+body,
+html {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  background-color: var(--background);
+
+  height: 100%;
+  margin: 0;
+}
+
+.logo {
+  margin: 15px;
+}
+
+#content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: var(--white);
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  font-weight: lighter;
+
+  margin: -10px;
+}
+
+h2 {
+  font-weight: normal;
+  color: var(--white);
+  font-size: 25px;
+  margin: 20px;
+}
+
+#filigrane {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-25%) rotate(-25deg);
+
+  color: rgba(255, 0, 0, 0.4);
+  font-family: "Merriweather", serif;
+  font-size: 200px;
+  font-weight: bold;
+
+  pointer-events: none;
+}
+
+#input {
+  width: 90%;
+  height: 60%;
+  margin-bottom: 20px;
+}
+
+#article-input,
+#article-display {
+  width: 100%;
+  height: 100%;
+  resize: none;
+
+  text-align: justify;
+
+  margin: 0px;
+  padding: 10px;
+  color: var(--white);
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+
+  background-color: rgb(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 5px;
+  transition-duration: 0.1s;
+}
+
+#article-display {
+  overflow: scroll;
+}
+
+#article-input:focus {
+  outline: 2px solid var(--white);
+}
+
+#ban-button {
+  padding: 10px;
+  margin: 20px;
+  
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  color: var(--white);
+  border: 2px solid var(--white);
+  background-color: transparent;
+
+  width: 30%;
+
+  transition-duration: 0.2s;
+}
+
+#ban-button:hover {
+  background-color: var(--white);
+  color: var(--lightgray);
+}
+
+#ban-button:active {
+  background-color: var(--white);
+  transform: translateY(6px);
+}
+
+#article-display {
+  text-align: justify;
+  text-justify: inter-word;
+  color: var(--white);
+}
+
+.banned {
+  display: inline-block;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration-line: underline;
+}
+
+.banned:hover {
+  color: var(--white);
+  background-color: red;
+}
+
+.highlight {
+  display: inline-block;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: red;
+}

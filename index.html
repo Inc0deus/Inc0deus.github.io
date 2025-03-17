@@ -1,23 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <window>
+        <script type="module">
+            import Fuse from "https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.mjs";
+            window.Fuse = Fuse;
+        </script>
+    </window>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./src/css/index.css" />
 
-    <link rel="stylesheet" href="app.css"><link/>
+        <title>Are You Banned</title>
+    </head>
 
-    <title>Test website</title>
+    <body>
+        <script src="./src/scripts/app.js" defer></script>
 
-    <script src="app.js"></script>
+        <div id="content">
+            <a href="https://www.whitehouse.gov"
+                ><img
+                    class="logo"
+                    src="./assets/images/logo.webp"
+                    alt="White House"
+                    width="150"
+            /></a>
+            <h1>Are you <span class="highlight">BANNED</span> ?</h1>
 
-</head>
+            <h2 id="info-heading">Enter a text and compute its score</h2>
 
-<body>
-    <h1>Antonin GRANADOS (Inc0deus)</h1>
-    <h2>This is a DEMO website</h2>
-    <p id="age_message">TEST VARIABLE MESSAGE: I am #age# yo</p>
-    <button onClick="buttonTest()">TEST BUTTON</button>
-</body>
+            <div id="input">
+                <h1 id="filigrane"></h1>
+                <textarea id="article-input"></textarea>
+            </div>
 
+            <button id="ban-button">COMPUTE SCORE</button>
+        </div>
+    </body>
 </html>
